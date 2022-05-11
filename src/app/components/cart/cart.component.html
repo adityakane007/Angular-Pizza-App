@@ -1,0 +1,54 @@
+<br>
+<h5 class="header-class">Cart Details</h5>
+<hr>
+<mat-card>
+    <div class="main" *ngIf="cartData == undefined || cartData == ''">
+        <div class="alert alert-warning alert-error alert-dismissible fade show" role="alert">
+            No Data is Available In Cart
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <a class="btn btn-outline-primary btn-sm active btn-color-2" aria-current="page"
+            routerLink="/menu-dashboard">Back To Menu</a>
+    </div>
+    <div class="main" *ngIf="cartData != ''">
+        <div class="container">
+            <div class="row" *ngFor="let menu of cartData">
+                <div class="col-md-3">
+                    <img [src]="menu.image_url" class="card-img-top" alt="..." style="width: 90px; height: 60px;">
+                </div>
+                <div class="col-md-3">
+                    <b>{{menu.name}}</b>
+                </div>
+                <div class="col-md-1">
+                    <b> Rs. {{menu.price}}</b>
+                </div>
+                <div class="col-md-3">
+                    <mat-form-field appearance="outline" class="form-full-width">
+                        <mat-label>Enter Required Quantity</mat-label>
+                        <input matInput type="quantity" autocomplete="off" value="1" disabled="true" required>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-2">
+                    <button (click)="removedMenu(menu.pk_id)" mat-raised-button class="btn-color-2" type="submit"
+                        value="Submit" color="primary">Remove</button>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-12 menuTotal">
+                    <b> Total Amount is Rs. {{menuTotal}}</b>
+                </div>
+                <!-- <div class="col-md-12 menuTotal">
+                    <button (click)="checkOut(cartData)" mat-raised-button class="btn-color-2 word-color-2"
+                        type="submit" value="Submit" color="primary">Check
+                        Out</button>
+                </div> -->
+                <div class="col-md-12 menuTotal">
+                    <button (click)="makePayment(cartData,menuTotal)" mat-raised-button class="btn-color-2 word-color-2"
+                        type="submit" value="Submit" color="primary">Make Payment</button>
+                </div>
+                <!-- <app-make-payment [cartData]="cartData" [menuTotal]="menuTotal"></app-make-payment> -->
+            </div>
+        </div>
+    </div>
+</mat-card>

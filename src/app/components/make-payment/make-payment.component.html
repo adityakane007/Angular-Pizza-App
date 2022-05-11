@@ -1,0 +1,34 @@
+<br>
+<h5 class="header-class">Make Payment</h5>
+<hr>
+<mat-card>
+    <div class="main">
+        <div class="row">
+            <div class="col-md-8">
+                Item Total : Rs. {{this.amountPay}} <br>
+                Tax & Charges : Rs. 250 <br>
+                Donate to Feeding India : Rs. 3 <br> <br>
+                <b>Grand Total : Rs. {{(this.amountPay*1)+(253*1)}}</b>
+            </div>
+            <div class="col-md-4">
+                Delivery at <b>Home</b> <br> <br>
+                D Wing Flat No 10, 5th Floor <br>
+                RamKrupa Apt, Narayan Peth <br>
+                Pune - 411030.
+            </div>
+        </div> <br> <br>
+        <div class="row">
+            <div class="col-md-12">
+                <b>Cancellation Policy :</b>
+                100% cancellation free will be applicable if you decide to cancel the order anytime after order
+                placement.
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-md-12 menuTotal">
+                <button (click)="makePayment(this.amountPay,this.cartData)" mat-raised-button
+                    class="btn-color-2 word-color-2">Pay Now</button>
+            </div>
+        </div>
+    </div>
+</mat-card>

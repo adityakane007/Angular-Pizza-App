@@ -1,0 +1,59 @@
+.row {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-position {
+    text-align: center;
+}
+
+.menuTotal {
+    text-align: center;
+    color: black;
+}
+
+.header-class {
+    text-align: left;
+    font-size: 20px;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.word-color-1 {
+    color: white;
+}
+
+.word-color-2 {
+    color: yellow;
+}
+
+.btn-class {
+    text-align: right;
+    float: right;
+}
+
+.btn-color-1 {
+    background-color: yellow;
+    border-color: yellow;
+
+}
+
+.btn-color-2 {
+    background-color: black;
+    border-color: black;
+}
+
+.alert-success {
+    background-color: black;
+    border-color: black;
+    color: yellow;
+}
+
+.alert-error {
+    background-color: black;
+    border-color: black;
+    color: red;
+}

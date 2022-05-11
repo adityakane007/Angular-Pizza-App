@@ -1,0 +1,34 @@
+.main-page-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.navbar-color {
+    background-color: black;
+}
+
+.word-color-1 {
+    color: white;
+}
+
+.word-color-2 {
+    color: yellow;
+}
+
+.btn-class {
+    text-align: right;
+    float: right;
+}
+
+.btn-color-1 {
+    background-color: yellow;
+    border-color: yellow;
+
+}
+
+.btn-color-2 {
+    background-color: black;
+    border-color: black;
+}

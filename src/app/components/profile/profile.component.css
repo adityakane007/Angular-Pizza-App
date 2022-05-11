@@ -1,0 +1,72 @@
+.row {
+    text-align: center;
+}
+
+.title-align {
+    float: center;
+    text-align: center;
+}
+
+.button-align {
+    float: right;
+}
+
+.form-row {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.form-full-width {
+    width: 30%;
+}
+
+.btn-color-1 {
+    background-color: yellow;
+    border-color: yellow;
+
+}
+
+.btn-color-2 {
+    background-color: black;
+    border-color: black;
+}
+
+.word-color-1 {
+    color: white;
+}
+
+.word-color-2 {
+    color: yellow;
+}
+
+.header-class {
+    text-align: left;
+    font-size: 20px;
+}
+
+.title-class {
+    text-align: center;
+    font-size: 15px;
+}
+
+.mat-class-1 {
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaF1AndZbBc3ulo3O6L3xJjy8h2AEfiWUnAw&usqp=CAU"); */
+    /* min-height: 380px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #181818;
+}
+
+.mat-class-2 {
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaF1AndZbBc3ulo3O6L3xJjy8h2AEfiWUnAw&usqp=CAU"); */
+    /* min-height: 380px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #FEE715FF;
+}

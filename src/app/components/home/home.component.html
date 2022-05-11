@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar-color">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/dashboard">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pizza-logo-design-template-56caf4f5ac2bf2f93f6134e1cf516a0d_screen.jpg?ts=1618677930"
+                style="width: 50px;">
+        </a>
+        <div class="row">
+            <p class="col-sm-8 word-color-1" style="font-size: 20px;">Super Delicious &nbsp;
+            </p>
+            <p class="col-sm-6 word-color-2" style="font-size: 30px;"> Pizza </p>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item mb-2" *ngIf="!isLoggedIn">
+                    <a class="btn btn-outline-primary btn-sm active btn-color-2" aria-current="page"
+                        routerLink="/sign-in">Login</a>
+                </li> &nbsp; &nbsp;
+                <li class="nav-item mb-2" *ngIf="!isLoggedIn">
+                    <a class="btn btn-outline-primary btn-sm active btn-color-2" aria-current="page"
+                        routerLink="/sign-up">Sign
+                        Up</a>
+                </li>
+
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="btn btn-outline-primary btn-sm active btn-color-2" aria-current="page"
+                        routerLink="/menu-dashboard">Menu</a>
+                </li> &nbsp;
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="btn btn-outline-primary btn-sm active btn-color-2" aria-current="page"
+                        routerLink="/cart">Cart ({{cartCount}})
+                    </a>
+                </li> &nbsp;
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="btn btn-outline-primary btn-sm active btn-color-2" aria-current="page"
+                        routerLink="/edit-profile">Profile
+                    </a>
+                </li> &nbsp;
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="btn btn-outline-primary btn-sm active btn-color-2" aria-current="page"
+                        (click)="signOut()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

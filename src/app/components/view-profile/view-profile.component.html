@@ -1,0 +1,31 @@
+<br>
+<h5 class="header-class">User's Profile</h5>
+<hr>
+<mat-card style="width: 950px;margin-left: auto;margin-right: auto;">
+    <div class="main" *ngIf="userInfo != ''">
+        <div class="container">
+            <div class="row" *ngFor="let user of userInfo">               
+                <div class="col-md-3">
+                    <img src="https://www.citypng.com/public/uploads/preview/download-black-male-user-profile-icon-png-116371332534k5baafcll.png"
+                        class="card-img-top" alt="..." style="width: 190px; height: 200px;">
+                </div>
+                <div class="col-md-3 user-profile">
+                    <p>
+                        {{user.name}} <br> <br>
+                        {{user.address}} <br> <br>
+                        {{user.email}} <br> <br>
+                        {{user.mobile}}
+                    </p> <br>
+                    <p>
+                        <button (click)="editProfile()" mat-raised-button class="btn-color-2 word-color-2" type="submit"
+                            value="Submit" color="primary">Edit
+                            Profile</button>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-card>
